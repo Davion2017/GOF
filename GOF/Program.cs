@@ -6,7 +6,7 @@ namespace GOF
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            SimpleFactoryDemo.Demo();
         }
     }
 }
