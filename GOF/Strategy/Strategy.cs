@@ -22,6 +22,12 @@ namespace GOF.Strategy
             context = new Context(new ConcreteError());
             context.ContextInterface();
         }
+
+        public static void StrategyFactory()
+        {
+            FactoryContext context = new FactoryContext("A");
+            context.StrategyInterface();
+        }
     }
 
     /// <summary>
@@ -37,6 +43,40 @@ namespace GOF.Strategy
         public void ContextInterface()
         {
             this.strategy.AlgorithmInterface();
+        }
+    }
+
+    /// <summary>
+    /// 策略模式结合简单工厂模式，实现业务与逻辑分离
+    /// </summary>
+    public class FactoryContext
+    {
+        Strategy strategy = null;
+        public FactoryContext(string type)
+        {
+            switch(type)
+            {
+                case "A":
+                    strategy = new ConcreteStrategyA();
+                    break;
+                case "B":
+                    strategy = new ConcreteStrategyB();
+                    break;
+                case "c":
+                    strategy = new ConcreteStrategyC();
+                    break;
+                case "E":
+                    strategy = new ConcreteError();
+                    break;
+                default:
+                    strategy = null;
+                    break;
+            }
+        }
+
+        public void StrategyInterface()
+        {
+            strategy.AlgorithmInterface();
         }
     }
 

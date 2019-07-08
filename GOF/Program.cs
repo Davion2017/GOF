@@ -6,7 +6,7 @@ namespace GOF
     {
         static void Main(string[] args)
         {
-            Strategy.Demo.SortDemo();
+            Strategy.StrategyDemo.StrategyFactory();
         }
     }
 }
