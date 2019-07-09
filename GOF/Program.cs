@@ -6,7 +6,7 @@ namespace GOF
     {
         static void Main(string[] args)
         {
-            Decorator.DigimonDemo.Demo();
+            Proxy.ProxyTestDemo.Demo();
         }
     }
 }
