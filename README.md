@@ -22,6 +22,8 @@
 
 * [学习过程代码](https://github.com/Davion2017/GOF/tree/master/GOF/SimpleFactory)
 
+![简单工厂](https://github.com/Davion2017/GOF/blob/master/GOF/Resources/Image/%E7%AE%80%E5%8D%95%E5%B7%A5%E5%8E%82.png)
+
 ---
 
 ### 策略模式
@@ -37,6 +39,8 @@
 * 缺点是用户必须提前知道所有的策略算法，而且用户需要知道上下文类，以及各子类的的区别，用户创建对象时略微麻烦（自我感觉）
 
 * [学习过程代码](https://github.com/Davion2017/GOF/tree/master/GOF/Strategy)
+
+![策略模式](https://github.com/Davion2017/GOF/blob/master/GOF/Resources/Image/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F.png)
 
 ---
 
@@ -54,3 +58,5 @@
   >创建的对象过多，容易混杂，而且似乎好多实例用完就没用了，占用内存
   
  * [学习过程代码](https://github.com/Davion2017/GOF/tree/master/GOF/Decorator)
+ 
+ ![装饰模式](https://github.com/Davion2017/GOF/blob/master/GOF/Resources/Image/%E8%A3%85%E9%A5%B0%E6%A8%A1%E5%BC%8F.png)
