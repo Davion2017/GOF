@@ -6,7 +6,7 @@ namespace GOF
     {
         static void Main(string[] args)
         {
-            Proxy.ProxyTestDemo.Demo();
+            Factory.FactoryTest.FactoryDemo.Demo();
         }
     }
 }

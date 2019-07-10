@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GOF
+namespace GOF.SimpleFactory
 {
     /*
      * 使用简单工厂模式模拟女娲（Nvwa）造人(Person)，如果传入参数M，则返回一个Man对象，如果传入参数W，则返回一个对象Woman。

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GOF
+namespace GOF.SimpleFactory
 {
     /// <summary>
     /// 通过简单工厂实现计算器
