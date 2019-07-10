@@ -1,7 +1,7 @@
 # GOF
 设计模式学习
 
-参照[《大话设计模式》](https://book.douban.com/subject/2334288/)学习，实现每个设计模式的案例，以及总结设计原则
+参照[《大话设计模式》](https://book.douban.com/subject/2334288/)学习（[PDF文件](https://github.com/Davion2017/GOF/blob/master/GOF/Resources/PDF/%E5%A4%A7%E8%AF%9D%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F(%E5%B8%A6%E7%9B%AE%E5%BD%95%E5%AE%8C%E6%95%B4%E7%89%88).pdf)），实现每个设计模式的案例，以及总结设计原则
 
 同步参照网络上其他人的练习记录，争取暑假初步理解设计模式，并能简单应用
 
