@@ -6,7 +6,7 @@ namespace GOF
     {
         static void Main(string[] args)
         {
-            Factory.FactoryTest.FactoryDemo.Demo();
+            Prototype.PrototypeTestDemo.DemoDeep();
         }
     }
 }
