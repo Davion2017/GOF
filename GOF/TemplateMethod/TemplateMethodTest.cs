@@ -12,11 +12,16 @@ namespace GOF.TemplateMethod
     {
         public static void Demo()
         {
-            BigMac bigMac = new BigMac();
-            ZingerBurger zingerBurger = new ZingerBurger();
-            bigMac.makeHanburger();
-            Console.WriteLine("-------------------");
-            zingerBurger.makeHanburger();
+            List<Hamburger> hamburgers = new List<Hamburger>
+            {
+                new BigMac(),
+                new ZingerBurger(),
+            };
+            foreach (Hamburger item in hamburgers)
+            {
+                item.makeHanburger();
+                Console.WriteLine();
+            }
         }
     }
 
