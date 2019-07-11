@@ -6,7 +6,7 @@ namespace GOF
     {
         static void Main(string[] args)
         {
-            Prototype.PrototypeTestDemo.DemoDeep();
+            TemplateMethod.TemplateMethodTestDemo.Demo();
         }
     }
 }
