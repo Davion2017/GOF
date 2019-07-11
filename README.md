@@ -136,4 +136,4 @@
 
 * [学习过程代码](https://github.com/Davion2017/GOF/tree/master/GOF/Prototype)
 
-![原型模式](https://github.com/Davion2017/GOF/blob/master/GOF/Resources/Image/%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F.png）
+![原型模式](https://github.com/Davion2017/GOF/blob/master/GOF/Resources/Image/%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F.png)
