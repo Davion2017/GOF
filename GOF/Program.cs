@@ -6,7 +6,7 @@ namespace GOF
     {
         static void Main(string[] args)
         {
-            Facade.FacadeTestDemo.Demo();
+            Builder.BuilderDemo.Demo();
         }
     }
 }
