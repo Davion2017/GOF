@@ -12,4 +12,78 @@ namespace GOF.Builder
      * 指挥装机人员（ConcreteBuilder）去构建组件；
      * 将组件组装起来成小成需要的电脑（Product）
      */
+    public class BuilderTestDemo
+    {
+        public static void Demo()
+        {
+            DirectorBoss boss = new DirectorBoss();
+            BuildA buildA = new BuildA();
+            BuildB buildB = new BuildB();
+
+            boss.makeComputer(buildA);
+            ProductComputer product = buildA.GetComputer();
+            product.show();
+        }
+    }
+    class ProductComputer
+    {
+        IList<string> parts = new List<string>();
+        public void addPart(string part)
+        {
+            parts.Add(part);
+        }
+        public void show()
+        {
+            foreach (string part in parts)
+            {
+                Console.WriteLine(part);
+            }
+        }
+    }
+    abstract class BuildComputer
+    {
+        public abstract void BuildCPU();
+        public abstract void BuildGPU();
+        public abstract ProductComputer GetComputer();
+    }
+    class BuildA : BuildComputer
+    {
+        ProductComputer computer = new ProductComputer();
+        public override void BuildCPU()
+        {
+            computer.addPart("CPU：i7 8550");
+        }
+        public override void BuildGPU()
+        {
+            computer.addPart("GPU：GTX1080ti");
+        }
+        public override ProductComputer GetComputer()
+        {
+            return computer;
+        }
+    }
+    class BuildB : BuildComputer
+    {
+        ProductComputer computer = new ProductComputer();
+        public override void BuildCPU()
+        {
+            computer.addPart("CPU：i5 6550");
+        }
+        public override void BuildGPU()
+        {
+            computer.addPart("GPU：MX150");
+        }
+        public override ProductComputer GetComputer()
+        {
+            return computer;
+        }
+    }
+    class DirectorBoss
+    {
+        public void makeComputer(BuildComputer builder)
+        {
+            builder.BuildCPU();
+            builder.BuildGPU();
+        }
+    }
 }

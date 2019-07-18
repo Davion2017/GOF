@@ -6,7 +6,7 @@ namespace GOF
     {
         static void Main(string[] args)
         {
-            Builder.BuilderDemo.Demo();
+            Builder.BuilderTestDemo.Demo();
         }
     }
 }
